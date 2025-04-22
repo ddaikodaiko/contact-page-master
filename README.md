@@ -31,8 +31,7 @@ Finally, I learned how to deploy a simple project to **GitHub Pages**, including
 
 ## 📸 Demo
 
-You can view the live demo here: [https://your-username.github.io/contact-form](https://your-username.github.io/contact-form)  
-_(Replace with your actual GitHub Pages URL)_
+You can view the live demo here: https://ddaikodaiko.github.io/contact-page-master/
 
 ---
 
