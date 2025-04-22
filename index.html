@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Contact Page | devChallenges.io</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100px;
+        background-image: url(resources/background.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+        font-weight: bold;
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+    h1{
+      font-size: 64px;
+      text-align: center;
+      margin-top: 16px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+    h2{
+      font-size: 32px;
+      text-align: center;
+      margin-top: 16px;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+       }   
+       .line-break {
+  display: block;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+}
+
+
+.fila {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.bloque {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%; /* hace que todos los bloques sean igual de anchos */
+}
+
+input, select {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 150px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input[type="submit"] {
+  padding: 20px;
+  text-align: center;
+  color: var(--azul);
+  font-weight: 700;
+  width: 100%;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: purple;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .fila {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formulario {
+    padding: 20px;
+    margin: 20px;
+    max-width: 95%;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .formulario {
+    padding: 15px;
+    border-radius: 15px;
+    margin: 15px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 14px;
+  }
+
+  input[type="submit"] {
+    font-size: 14px;
+    padding: 14px;
+  }
+}
+
+
+       </style>
+  </head>
+  <body>
+    <div class="encabezado">
+    <h1>
+      Interested in our 
+      <span class="line-break">business pricing?</span>
+    </h1>
+    
+    <h2>
+      Fill out the form to view details and we’ll 
+      <span class="line-break">contact you as soon as possible.</span>
+    </h2>
+  </div>
+  <div class="formulario">
+    <form action="#" method="post">
+             
+ <!-- Name + Company Mail en la misma fila -->
+ <div class="fila">
+  <div class="campo">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Ethan Johnson">
+  </div>
+
+  <div class="campo">
+    <label for="mail">Company mail</label>
+    <input type="text" id="mail" name="mail" placeholder="ethan@johnson.com">
+  </div>
+</div>
+
+<!-- Company Size debajo -->
+<div class="bloque">
+  <label for="size">Company size</label>
+ <select name="size" id="size">
+  <option value="small">1-10 employees</option>
+  <option value="medium">10-50 employees</option>
+  <option value="large" selected>50-100 employees</option>
+ </select>
+</div>
+
+<!-- Subject debajo del todo -->
+<div class="bloque">
+  <label for="subject">Subject</label>
+  <select name="subject" id="subject">
+    <option value="small">Building Landing pages</option>
+    <option value="medium">Building Backend</option>
+    <option value="large">Others</option>
+   </select>
+</div>
+
+<!-- Textarea con tamaño fijo -->
+<div class="bloque">
+  <label for="mensaje">Deja tu mensaje</label>
+  <textarea name="mensaje" id="mensaje"></textarea>
+</div>
+
+<input id="boton" type="submit" value="Contact sales">
+    
+  </div>
+
+    <div class="author-info">
+      Coded by <a href="https://www.linkedin.com/in/marcos-ramos-a99892312/">daiko "Marcos Ramos Espinosa"</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
